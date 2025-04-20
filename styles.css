@@ -1,0 +1,17 @@
+#pet-container {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#pet {
+
+    background-color: lightgreen;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 64px;
+}
