@@ -1,17 +1,41 @@
-#pet-container {
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    border-radius: 50%;
+#sleepy-bar {
+    width: 300px;
+    height: 20px;
+    background-color: green;
+    transition: background-color 0.3s;
+}
+
+.happy { background-color: lightgreen; }
+.hungry { background-color: orange; }
+.sleepy { background-color: lightblue; }
+.tired { background-color: gray; }
+
+
+.pet-container {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #pet {
-
-    background-color: lightgreen;
-    border-radius: 50%;
-    position: absolute;
     font-size: 64px;
+    margin-bottom: 10px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease;
 }
